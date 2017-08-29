@@ -14,14 +14,19 @@ let cssExtractTextPlugin = ExtractTextPlugin.extract({
 });
 
 let sassExtractTextPlugin = ExtractTextPlugin.extract({
-	use: 'sass-loader',
+	use: ['css-loader','sass-loader'],
 	fallback: 'style-loader'
 });
 
 let lessExtractTextPlugin = ExtractTextPlugin.extract({
-	use: 'less-loader',
+	use: ['css-loader','less-loader'],
 	fallback: 'style-loader'
 })
+
+let vueExtractTextPlugin = ExtractTextPlugin.extract({
+	use: ['css-loader'],
+	fallback: 'vue-style-loader'
+});
 
 module.exports = {
 	// 配置应用程序入口文件
@@ -32,7 +37,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'asset/'),
 		filename: '[name].bundle.js',
-		publicPath: ''
+		publicPath: 'http://localhost:8008/'
 	},
 	// 
 	module: {
@@ -46,10 +51,9 @@ module.exports = {
 				loader: 'vue-loader',
 				options: {
 					loaders: {	
-						css: ExtractTextPlugin.extract({
-							use: ['css-loader'],
-							fallback: 'vue-style-loader'
-						})
+						css: vueExtractTextPlugin,
+						sass: sassExtractTextPlugin,
+						scss: sassExtractTextPlugin
 					}
 				}
 			},

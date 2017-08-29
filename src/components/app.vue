@@ -3,7 +3,8 @@
 </template>
 
 <script>
+	import 'css/style.css';
 </script>
-
+	
 <style>
 </style>

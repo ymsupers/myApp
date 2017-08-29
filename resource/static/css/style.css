@@ -1,0 +1,30 @@
+/**
+ *	author: 杨益美
+ * 	email: wsmis@vip.qq.com
+ *  description: 全局样式文件
+ *  date: 2017-08-29
+ *  (c) Copyright 2017 杨益美. All Rights Reserved. 
+ */
+body, div, section, header, nav, aside, article, fieldset, hgroup, video, abbr, table, thead, tbody, tfoot, tr, td, form, textarea, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-size: 62.5%; /*正常字体*/
+	color: #333;
+	line-height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+img {
+	border: 0;
+}
