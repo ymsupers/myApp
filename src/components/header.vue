@@ -3,7 +3,7 @@
 		<header>
 			<div class="box box-pack-start">
 				<div class="box-item logo">
-					<strong @click="handover">{{siteName || '今日头条'}}</strong>
+					<strong>{{siteName || '今日头条'}}</strong>
 				</div>
 				<div class="box-item search">
 					<i-input placeholder="迪迦奥特曼 | 漫游" />
@@ -62,12 +62,10 @@
 		mounted() {
 		    let {path} = this.$router.history.current;
 		    this.$data.path = path.replace(/\//, '');
-		    console.log(1);
 		},
         watch: {
 		    '$route': function ({path}) {
 		        this.$data.path = path.replace(/\//, '');
-		        console.log(this.path);
 			}
 		}
 	}
