@@ -50,7 +50,10 @@ module.exports = Merge(WebpackCommonJs, {
 					apiHost: 'http://127.0.0.1:7000/api/'
 				}
 			},
-			hash: true
+			hash: true,
+			links: [
+				'https://fonts.googleapis.com/icon?family=Material+Icons'
+			]
 		}),
 		// 独立出css文件
 		new ExtractTextPlugin('css/[name].min.css', {

@@ -5,6 +5,10 @@
  *  date: 2017-08-29
  *  (c) Copyright 2017 杨益美. All Rights Reserved. 
  */
+@import url("alifont.css");
+html {
+	font-size: 62.5%;
+}
 body, div, section, header, nav, aside, article, fieldset, hgroup, video, abbr, table, thead, tbody, tfoot, tr, td, form, textarea, img {
 	margin: 0;
 	padding: 0;
@@ -12,9 +16,9 @@ body, div, section, header, nav, aside, article, fieldset, hgroup, video, abbr, 
 }
 
 body {
-	font-size: 62.5%; /*正常字体*/
 	color: #333;
-	line-height: auto;
+	line-height: 1.8rem;
+	font-family: 'Siyuan blackbody';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,3 +32,36 @@ h1, h2, h3, h4, h5, h6 {
 img {
 	border: 0;
 }
+
+
+dl, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.box {
+	display: -webkit-box;
+	display: -moz-box;
+}
+
+.box-pack-start {
+	-webkit-box-pack: start;
+	-moz-box-pack: start;
+}
+
+.box-pack-end {
+	-webkit-box-pack: end;
+	-moz-box-pack: end;
+}
+/*盒子模型横向排列*/
+.horizontal {
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+}
+
+

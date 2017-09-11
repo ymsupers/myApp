@@ -1,0 +1,7 @@
+@font-face {font-family: 'Siyuan blackbody';
+  src: url('//at.alicdn.com/t/webfont_12c482tuih1o47vi.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_12c482tuih1o47vi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_12c482tuih1o47vi.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_12c482tuih1o47vi.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_12c482tuih1o47vi.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
+}
