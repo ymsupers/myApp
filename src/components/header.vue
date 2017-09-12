@@ -73,6 +73,7 @@
 
 <style lang="scss" scoped="scoped">
 	#header {
+		width: 100vw;
 		height: auto;
 		border-bottom: 1px solid #ddd;
 		&:after {
@@ -109,6 +110,7 @@
 		}
 		.swiper-container {
 			height: auto;
+			background: #fff;
 			.swiper-slide {
 				background: none;
 				color: #333;

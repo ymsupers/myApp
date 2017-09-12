@@ -8,6 +8,7 @@
 
 import Vue from 'vue';
 import router from './routes/router';
+import VueScroller from 'vue-scroller';
 import App from 'components/app.vue';
 import axios from 'axios';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
@@ -17,6 +18,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper';
 Vue.prototype.$axios = axios;
 
 Vue.use(VueAwesomeSwiper);
+Vue.use(VueScroller);
 
 // 实例化 vue 将 `router` 挂载到 vue 实例
 const app = new Vue({

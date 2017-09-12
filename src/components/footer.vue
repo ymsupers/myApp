@@ -31,10 +31,6 @@
 <style lang="scss" scoped="scoped">
     #footer {
         border-top: 1px solid #dcdcdc;
-        position: fixed;
-        width: 100vw;
-        bottom: 0px;
-        left: 0;
         height: auto;
         background: #f1f1f1;
         footer {

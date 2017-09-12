@@ -1,12 +1,20 @@
 <template>
 	<section class="container">
-		<!-- START: 头部开始 -->
-		<app-header :siteName="'今日头条'"></app-header>
-		<!-- START: ok -->
-		<router-view></router-view>
-		<!-- START: 脚部开始 -->
-		<app-footer></app-footer>
-		<!-- START: ok -->
+		<div class="layout box">
+			<div class="box-item">
+				<!-- START: 头部开始 -->
+				<app-header :siteName="'今日头条'"></app-header>
+				<!-- START: ok -->
+			</div>
+			<div class="box-item content">
+				<router-view></router-view>
+			</div>
+			<div class="box-item">
+				<!-- START: 脚部开始 -->
+				<app-footer></app-footer>
+				<!-- START: ok -->
+			</div>
+		</div>
 	</section>
 </template>
 
@@ -21,5 +29,22 @@
 	}
 </script>
 
-<style>
+<style lang="scss" scoped="scoped">
+	.layout {
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		box-orient: vertical;
+		height: 100vh;
+		.box-item {
+			&:after {
+				clear: both;
+			}
+		}
+		.content {
+			-webkit-box-flex: 10;
+			overflow: scroll;
+			background: #eee;
+			position: relative;
+		}
+	}
 </style>
