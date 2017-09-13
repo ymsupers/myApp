@@ -42,7 +42,7 @@
 		}
 		.content {
 			-webkit-box-flex: 10;
-			overflow: scroll;
+			overflow: hidden;
 			background: #eee;
 			position: relative;
 		}

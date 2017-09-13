@@ -33,6 +33,7 @@
         border-top: 1px solid #dcdcdc;
         height: auto;
         background: #f1f1f1;
+        padding-top: .5rem;
         footer {
             -webkit-box-align: center;
             -moz-box-align: center;

@@ -33,6 +33,7 @@ let routes = [
 	{
 		path: '/home',
 		component: home,
+		redirect: '/promote',
         children: [
 			{
 				path: '/promote',
